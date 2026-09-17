@@ -14,7 +14,7 @@ export function Navbar() {
           {APP_NAME}
         </span>
       </div>
-      <UserButton afterSignOutUrl="/" />
+      <UserButton />
     </header>
   );
 }

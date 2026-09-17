@@ -31,6 +31,6 @@ export interface BugFilters {
   query?: string;
   tag?: string;
   technology?: string;
-  difficulty?: Difficulty;
+  difficulty?: number;
   sort?: "newest" | "oldest" | "difficulty-asc" | "difficulty-desc";
 }

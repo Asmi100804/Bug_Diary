@@ -58,7 +58,7 @@ export function Sidebar() {
       </div>
 
       <div className="flex items-center gap-2 border-t border-ink/10 pt-4">
-        <UserButton afterSignOutUrl="/" />
+        <UserButton />
         <span className="text-ink-soft text-xs">Account</span>
       </div>
     </aside>

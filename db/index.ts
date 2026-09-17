@@ -6,11 +6,9 @@ if (!process.env.DATABASE_URL) {
   throw new Error("DATABASE_URL is not set. Add it to your .env file.");
 }
 
-neonConfig.fetchConnectionCache = true;
-
-neonConfig.fetchFunction = async (input, init) => {
+neonConfig.fetchFunction = async (input: RequestInfo | URL, init?: RequestInit) => {
   const maxRetries = 3;
-  let lastError;
+  let lastError: unknown;
 
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
