@@ -12,7 +12,7 @@ export function Sidebar() {
   return (
     <aside className="hidden bg-amber-50 md:flex md:w-56 md:shrink-0 md:flex-col md:justify-between md:border-r md:border-ink/10 md:px-5 md:py-6">
       <div>
-        <Link href="/dashboard" className="mb-10 flex items-center gap-2"
+        <Link href="/dashboard" className="mt-3 mb-6 flex items-center gap-2"
         >
           <img src="/bug.svg" alt="" className="h-6 w-6"/>
 
