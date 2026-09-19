@@ -8,11 +8,11 @@ export default function AppLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex h-dvh overflow-hidden">
       <Sidebar />
       <div className="flex min-w-0 flex-1 flex-col">
         <Navbar />
-        <main className="relative flex-1 pb-16 md:pb-0 bg-no-repeat bg-cover bg-center bg-fixed"
+        <main className="relative flex-1 overflow-y-auto pb-16 md:pb-0 bg-no-repeat bg-cover bg-center"
   style={{ backgroundImage: "url('/bg-bugs.svg')" }}>{children}</main>
         <MobileNav />
       </div>

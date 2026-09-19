@@ -10,7 +10,7 @@ export function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="hidden bg-amber-50 md:flex md:w-56 md:shrink-0 md:flex-col md:justify-between md:border-r md:border-ink/10 md:px-5 md:py-6">
+    <aside className="hidden bg-amber-50 md:flex md:h-dvh md:w-56 md:shrink-0 md:flex-col md:justify-between md:border-r md:border-ink/10 md:px-5 md:py-6">
       <div>
         <Link href="/dashboard" className="mt-3 mb-6 flex items-center gap-2"
         >
